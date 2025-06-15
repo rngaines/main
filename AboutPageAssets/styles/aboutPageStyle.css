@@ -93,8 +93,40 @@ header .externalResourcesNav .externalResources {
 	padding-bottom: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
-	cursor: pointer;
 }
+
+header .externalResourcesNav .button {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+	background-color: rgba(208,207,207,1.00);
+	display: inline-block;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+header .externalResourcesNav .button:hover{
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+header .externalResourcesNav .button:a {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-decoration: none;
+}
+
 header .externalResourcesNav .externalResources:hover {
 	background-color: rgba(153,153,153,1.00);
 }
