@@ -246,7 +246,7 @@ hr {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: 100;
-	color: rgba(208,207,207,1.00);
+	color: rgba(146,146,146,1.00);
 }
 .mainContent .section1 .section1Content span {
 	color: rgba(146,146,146,1.00);
@@ -301,7 +301,7 @@ hr {
 	display: block;
 }
 .mainContent .externalResourcesNav .externalResources {
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(146,146,146,1.00);
 	display: inline-block;
 	text-align: center;
 	margin-top: 0px;
@@ -313,7 +313,7 @@ hr {
 }
 .externalResourcesNav .externalResources a {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(255,255,255,1.00);
+	color: rgba(146,146,146,1.00);
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -496,7 +496,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-.mainContent .externalResourcesNav {
+.mainContent .menuBarNav {
 	margin-left: 20%;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -504,7 +504,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 	padding-top: 0px;
 	clear: both;
 }
-.mainContent .externalResourcesNav .externalResources {
+.mainContent .menuBarNav .menuBarLink {
 	width: 199px;
 	height: 48px;
 	margin-top: 5%;
@@ -565,14 +565,14 @@ header .socialNetworkNavBar .socialNetworkNav {
 	margin-left: 0%;
 	font-family: sans-serif;
 }
-.mainContent .externalResourcesNav {
+.mainContent .menuBarNav {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	text-align: center;
 	padding-top: 0px;
 	clear: both;
 }
-.mainContent .externalResourcesNav .externalResources {
+.mainContent .menuBarNav .menuBar {
 	width: 199px;
 	height: 48px;
 	border-radius: 20%;
