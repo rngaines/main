@@ -152,7 +152,7 @@ hr {
 	border-radius: 0%;
 	clear: both;
 }
-.mainContent h1 {
+h1 {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(158,116,89,1.00);
 	font-size: 30px;
@@ -160,7 +160,7 @@ hr {
 	line-height: 30px;
 }
 
-.mainContent h2 {
+h2 {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(158,116,89,1.00);
 	font-size: 30px;
@@ -168,7 +168,7 @@ hr {
 	line-height: 30px;
 }
 
-.mainContent h3 {
+h3 {
 	font-family: sans-serif;
 	color: rgba(158,116,89,1.00);
 	font-size: 16px;
@@ -176,7 +176,7 @@ hr {
 	line-height: 24px;
 }
 
-.mainContent p {
+p {
 	font-family: sans-serif;
 	color: rgba(146,146,146,1.00);
 	font-size: 14px;
