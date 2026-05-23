@@ -170,9 +170,57 @@ header .menuBarNav .button:a {
 
 
 /* !! Main Content sections !! */
+
+.mainContent .profilePhoto {
+	background-color: rgba(133,97,78,1.00);
+	width: 259px;
+	height: 259px;
+	border-radius: 0%;
+	clear: both;
+}
+.mainContent .profileHeader h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(158,116,89,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.mainContent .profileHeader h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(158,116,89,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.mainContent .profileHeader h3 {
+	font-family: sans-serif;
+	color: rgba(158,116,89,1.00);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+hr {
+	background-color: rgba(208,207,207,1.00);
+	height: 1px;
+}
+
+.mainContent .profileHeader p {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+	overflow-y: inherit;
+}
+
+
 .mainContent .section1 {
 	display: block;
 }
+
 .section1 .sectionTitle, .section2 .sectionTitle {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(184,151,130,1.00);
