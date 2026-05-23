@@ -141,6 +141,7 @@ hr {
 }
 
 
+
 /* !! Main Content sections !! */
 
 .mainContent .profilePhoto {
@@ -267,9 +268,7 @@ hr {
 	opacity: 0.5; 
 }
 
-.mainContent {
-	display: block;
-}
+
 .mainContent .externalResourcesNav .externalResources {
 	background-color: rgba(146,146,146,1.00);
 	display: inline-block;
@@ -289,6 +288,7 @@ hr {
 	line-height: 18px;
 	text-decoration: none;
 }
+
 .stretch {
 	content: '';
 	display: inline-block;
@@ -303,7 +303,6 @@ hr {
 	font-weight: bold;
 	line-height: 1.8;
 	overflow-y: inherit;
-	
 }
 
 /* !! Footer !! */
