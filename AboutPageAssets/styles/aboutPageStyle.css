@@ -138,13 +138,9 @@ header .menuBarNav .button {
 	padding-right: 2%;
 	text-decoration: none;
 }
-header .menuBarNav .button:hover{
-	opacity: 0.5;
-	text-decoration: underline;
-}
 header .menuBarNav .button:link {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(118,86,70,1.00);
+	color: rgba(208,207,207,1.00);
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -157,6 +153,10 @@ header .menuBarNav .button:visited {
 	font-weight: 400;
 	line-height: 18px;
 	text-decoration: none;
+}
+header .menuBarNav .button:hover{
+	opacity: 0.5;
+	text-decoration: underline;
 }
 
 .stretch {
