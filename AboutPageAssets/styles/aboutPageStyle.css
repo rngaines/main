@@ -9,7 +9,8 @@ body {
 	padding-left: 2.275%;
 	padding-right: 2.275%;
 }
-/* Header */
+
+/* !! Header !! */
 header {
 	text-align: center;
 	display: block;
@@ -102,7 +103,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	opacity: 0.5;
 }
 
-header .externalResourcesNav .externalResources {
+header .menuBarNav .menuLink {
 	background-color: rgba(184,151,130,1.00);
 	display: inline-block;
 	text-align: center;
@@ -114,7 +115,20 @@ header .externalResourcesNav .externalResources {
 	padding-right: 2%;
 }
 
-header .externalResourcesNav .button {
+header .menuBarNav .menuLink:hover {
+	background-color: rgba(201,176,160,1.00);
+}
+
+header .menuBarNav .menuLink:a {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+header .menuBarNav .button {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(118,86,70,1.00);
 	font-size: 14px;
@@ -132,12 +146,12 @@ header .externalResourcesNav .button {
 	text-decoration: none;
 }
 
-header .externalResourcesNav .button:hover{
+header .menuBarNav .button:hover{
 	opacity: 0.5;
 	text-decoration: none;
 }
 
-header .externalResourcesNav .button:a {
+header .menuBarNav .button:a {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(255,255,255,1.00);
 	font-size: 14px;
@@ -146,24 +160,15 @@ header .externalResourcesNav .button:a {
 	text-decoration: none;
 }
 
-header .externalResourcesNav .externalResources:hover {
-	background-color: rgba(201,176,160,1.00);
-}
-.externalResourcesNav .externalResources a {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(255,255,255,1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	text-decoration: none;
-}
 .stretch {
 	content: '';
 	display: inline-block;
 	margin-left: 2%;
 	margin-right: 2%;
 }
-/* Main Content sections */
+
+
+/* !! Main Content sections !! */
 .mainContent .section1 {
 	display: block;
 }
@@ -277,7 +282,8 @@ header .externalResourcesNav .externalResources:hover {
 	overflow-y: inherit;
 	
 }
-/* Footer */
+
+/* !! Footer !! */
 footer .footerDisclaimer {
 	font-family: sans-serif;
 	font-size: 14px;
