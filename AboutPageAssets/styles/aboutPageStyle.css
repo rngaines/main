@@ -142,7 +142,7 @@ header .menuBarNav .button {
 	padding-left: 2%;
 	padding-right: 2%;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	text-decoration: none;
 }
 
@@ -167,6 +167,10 @@ header .menuBarNav .button:a {
 	margin-right: 2%;
 }
 
+hr {
+	background-color: rgba(208,207,207,1.00);
+	height: 1px;
+}
 
 
 /* !! Main Content sections !! */
