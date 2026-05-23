@@ -123,14 +123,6 @@ header .menuBarNav .button:link {
 	line-height: 18px;
 	text-decoration: none;
 }
-header .menuBarNav .button:visited {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(90,60,45,1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	text-decoration: none;
-}
 header .menuBarNav .button:hover{
 	opacity: 0.5;
 	text-decoration: underline;
