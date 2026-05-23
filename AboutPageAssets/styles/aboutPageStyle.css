@@ -140,7 +140,7 @@ header .menuBarNav .button {
 }
 header .menuBarNav .button:hover{
 	opacity: 0.5;
-	text-decoration: none;
+	text-decoration: underline;
 }
 header .menuBarNav .button:link {
 	font-family: 'Montserrat', sans-serif;
