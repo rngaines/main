@@ -160,7 +160,7 @@ header .menuBarNav .button:a {
 	text-decoration: none;
 }
 
-.stretch {
+header .stretch {
 	content: '';
 	display: inline-block;
 	margin-left: 2%;
