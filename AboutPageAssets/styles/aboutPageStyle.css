@@ -212,7 +212,6 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   background-color: var(--primary);
   padding: var(--space-xs) var(--space-s);
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
 }
