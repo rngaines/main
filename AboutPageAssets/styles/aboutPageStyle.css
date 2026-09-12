@@ -21,7 +21,6 @@
   --text-light: #999999;
   --background: #FAF8F7;
   --border: #D0CFCF;
-}
 
   /* Spacing scale */
   --space-xs: 0.5rem;
@@ -29,6 +28,7 @@
   --space-m: 1.5rem;
   --space-l: 2rem;
   --space-xl: 3rem;
+
 }
 
 /* Body text */
@@ -217,11 +217,11 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 
 .nav-list {
+  background-color: var(--primary);
   list-style: none;
-  display: flex;
-  gap: var(--space-m);
   margin: var(--space-s);
   padding: var(--space-s);
+  display: flex;
 }
 
 
@@ -241,6 +241,19 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .nav-list li a:hover {
   background-color: var(--primary-light);
 }
+
+
+/* Active page highlighting */
+.nav-list li a.active {
+  background-color: var(--primary-dark);
+  color: white;
+  font-weight: 600;
+}
+
+.nav-list li a.active:hover {
+  background-color: var(--primary-light);
+}
+
 
 /* Hamburger icon */
 .hamburger {
@@ -332,17 +345,6 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .more-button:focus + .more-menu,
 .more-button:hover + .more-menu {
   display: block;
-}
-
-/* Active page highlighting */
-.nav-list li a.active {
-  background-color: var(--primary-dark);
-  color: white;
-  font-weight: 600;
-}
-
-.nav-list li a.active:hover {
-  background-color: var(--primary-light);
 }
 
 
