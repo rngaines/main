@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* TYPOGRAPHY */
+/* GLOBAL TYPOGRAPHY AND COLORS */
 
 :root {
   /* Primary brand color */
@@ -23,59 +23,125 @@
   --border: #D0CFCF;
 }
 
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+}
 
 /* Body text */
 body {
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
-   color: var(--text-dark);
-   background-color: var(--background);
+  color: var(--text-dark);
+  background-color: var(--background);
   margin-left: auto;
   margin-right: auto;
   width: 92%;
   max-width: 960px;
   padding-left: 2.275%;
   padding-right: 2.275%;
+  line-height: 1.7;
 }
 
 /* Headings */
-h1, h2, h3,
-header .profileHeader h1,
-header .profileHeader h2,
-header .profileHeader h3,
-.section1 .sectionTitle,
-.section2 .sectionTitle,
-.section2 .sectionContentTitle,
-.section2 .sectionContentSubTitle {
+h1 {
   font-family: "Rubik", sans-serif;
-  font-weight: 600;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.15;
   color: var(--primary);
 }
 
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--primary);
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--primary-dark);
+}
+
+h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--primary-dark);
+}
+
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--secondary-dark);
+}
+
+
 /* Body paragraphs */
-p,
-header .profileHeader p,
-.section2 .sectionContent,
-.section2 .sectionContent a,
-.mainContent .section1 .section1Content,
-.mainContent .section1 .section1Content span,
-.externalResourcesNav .externalResources a {
+p {
   font-family: "Figtree", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.7;
   color: var(--text-medium);
 }
 
+p.large {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+p.small {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+
 /* UI text (nav, buttons, metadata, footer) */
-nav, .nav-item, .button, .caption, .metadata, small,
-header .menuBarNav .button,
-footer .footerDisclaimer,
-footer .footerNote {
+nav, .nav-item, .button, .caption, .metadata, small {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: var(--text-medium);
+}
+
+.caption {
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
+.metadata {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+/* Taglines */
+.tagline {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary);
 }
 
 /* Highlight text */
@@ -85,15 +151,12 @@ footer .footerNote {
   color: var(--primary);
 }
 
+
+
 /* HEADER */
 
-header {
-  text-align: center;
-  display: block;
-}
-
 header .profileLogo .logoPlaceholder {
-  background-color: rgba(208,207,207,1.00);
+  background-color: var(--secondary-dark);
   width: 187px;
   text-align: center;
 }
@@ -103,12 +166,11 @@ header .logoPlaceholder span {
   font-size: 30px;
   font-weight: 700;
   color: white;
-   background-color: var(--primary)
   line-height: 53px;
 }
 
 header .profilePhoto {
-  background-color: rgba(133,97,78,1.00);
+  background-color: var(--secondary-dark);
   width: 259px;
   height: 259px;
   border-radius: 0%;
@@ -117,27 +179,25 @@ header .profilePhoto {
 
 header .profileHeader h1,
 header .profileHeader h2 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--primary);
 }
 
 header .profileHeader h3 {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: var(--primary-dark);
+}
+
+header .profileHeader p {
+  color: var(--text-medium);
 }
 
 header .socialNetworkNavBar {
   text-align: center;
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  overflow-y: auto;
-}
-
-header .socialNetworkNavBar .socialNetworkNav {
-  border-radius: 20%;
-  padding-right: 3%;
-  cursor: pointer;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-l);
 }
 
 header .socialNetworkNavBar .socialNetworkNav img:hover {
@@ -148,18 +208,17 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 header .menuBarNav .button {
   background-color: var(--primary);
   color: white;
+  padding: var(--space-xs) var(--space-s);
   display: inline-block;
-  text-align: center;
-  padding: 2%;
-  margin-bottom: 5px;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 header .menuBarNav .button:hover {
   background-color: var(--primary-light);
-   opacity: 0.5;
   text-decoration: underline;
 }
+
 
 /* MAIN CONTENT */
 
@@ -168,64 +227,30 @@ hr {
   height: 1px;
 }
 
-.mainContent .profilePhoto {
-  background-color: rgba(133,97,78,1.00);
-  width: 259px;
-  height: 259px;
-  border-radius: 0%;
-  clear: both;
-}
-
-/* Headings inside main content */
-h1, h2 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-h3 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 /* Section titles */
-.section1 .sectionTitle,
-.section2 .sectionTitle {
-  font-size: 21px;
-  font-weight: 900;
+.section-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: var(--primary);
 }
 
-.section1 .sectionTitleRule,
-.section2 .sectionTitleRule {
-  margin: 0 3% 0 0;
-  float: left;
-}
-
-.section1 .sectionTitleRule2,
-.section2 .sectionTitleRule2 {
-  background-color: rgba(208,207,207,1.00);
-  height: 1px;
-}
-
 /* Section content */
-.section2 .sectionContentTitle {
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.section2 .sectionContentSubTitle {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(68,67,67,1.00);
+.section1 .section1Content,
+.section2 .sectionContent {
+  font-family: "Figtree", sans-serif;
+  color: var(--text-medium);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* External resources */
 .mainContent .externalResourcesNav .externalResources {
   background-color: var(--secondary-dark);
-  display: inline-block;
-  text-align: center;
-  padding-top: 3%;
+  color: white;
+  padding-top: var(--space-s);
   cursor: pointer;
 }
 
@@ -233,13 +258,15 @@ h3 {
   background-color: var(--secondary);
 }
 
+
+
 /* FOOTER */
 
 footer .footerDisclaimer,
 footer .footerNote {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.4;
   color: var(--text-dark);
   font-weight: 700;
 }
@@ -250,36 +277,23 @@ footer .footerNote span {
   font-weight: 400;
 }
 
+
 /* MEDIA QUERIES */
 
-/* Mobile */
-@media only screen and (min-width: 285px) and (max-width: 480px) {
-  header {
-    width: 100%;
-  }
-
+* Mobile */
+@media only screen and (max-width: 480px) {
   header .profileHeader {
     text-align: center;
-    margin-top: 10%;
+    margin-top: var(--space-l);
   }
 
   header .profileHeader p {
     text-align: justify;
   }
 
-  header .socialNetworkNavBar {
-    margin-top: 60px;
-    margin-bottom: 15%;
-  }
-
   .mainContent .section1 {
     text-align: center;
-    margin-bottom: 10%;
-  }
-
-  .mainContent .section1 .section1Content {
-    display: inline-block;
-    text-align: justify;
+    margin-bottom: var(--space-l);
   }
 
   .mainContent .externalResourcesNav .externalResources {
@@ -297,35 +311,35 @@ footer .footerNote span {
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   header .profilePhoto {
     float: left;
-    margin-right: 3%;
-    margin-top: 5%;
+    margin-right: var(--space-s);
+    margin-top: var(--space-s);
   }
 
   header .profileHeader {
     text-align: left;
-    margin-top: 7%;
+    margin-top: var(--space-m);
   }
 
   .mainContent .section1 .section1Content {
     margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
   }
 
   .section2 .section2Content {
     margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
   }
 
   footer .footerDisclaimer {
     float: left;
-    margin-left: 3%;
+    margin-left: var(--space-s);
   }
 
   footer .footerNote {
     float: right;
-    margin-right: 3%;
+    margin-right: var(--space-s);
   }
 }
 
@@ -333,12 +347,12 @@ footer .footerNote span {
 @media only screen and (min-width: 1025px) {
   header .profileLogo .logoPlaceholder {
     float: left;
-    margin-bottom: 50px;
+    margin-bottom: var(--space-xl);
   }
 
   header .profilePhoto {
     float: left;
-    margin-right: 3%;
+    margin-right: var(--space-s);
   }
 
   .section1 .sectionTitleRule,
@@ -346,21 +360,13 @@ footer .footerNote span {
     width: 35%;
   }
 
-  .mainContent .section1 .section1Content {
-    margin: 0;
-  }
-
-  .section2 .section2Content {
-    padding: 5px;
-  }
-
   footer .footerDisclaimer {
     float: left;
-    margin-left: 3%;
+    margin-left: var(--space-s);
   }
 
   footer .footerNote {
     float: right;
-    margin-right: 3%;
+    margin-right: var(--space-s);
   }
 }
