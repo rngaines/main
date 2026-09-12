@@ -210,9 +210,9 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .top-nav {
   width: 100%;
   background-color: var(--primary);
+  margin: 0
   padding: var(--space-xs) var(--space-s);
   display: flex;
-  align-items: center;
   position: relative;
 }
 
