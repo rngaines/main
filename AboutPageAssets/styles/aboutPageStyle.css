@@ -232,6 +232,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   color: white;
   text-decoration: none;
   padding: var(--space-xs) var(--space-s);
+  margin: 0 var(--space-s);
   border-radius: 4px;
 }
 
@@ -247,6 +248,10 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   top: var(--space-xs);
 }
 
+.nav-more:hover .more-menu {
+  display: block;
+  }
+}
 .more-button {
   font-family: "Inter", sans-serif;
   font-size: 0.875rem;
@@ -333,6 +338,10 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   }
 }
 
+  .nav-more:hover .more-menu {
+    display: block;
+  }
+}
 
 
 /* MAIN CONTENT */
