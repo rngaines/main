@@ -214,6 +214,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   padding: var(--space-xs) var(--space-s);
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .nav-list {
