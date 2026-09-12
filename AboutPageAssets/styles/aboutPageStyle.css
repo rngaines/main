@@ -204,20 +204,135 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   opacity: 0.5;
 }
 
-/* Navigation buttons */
-header .menuBarNav .button {
+
+/* TOP NAVIGATION BAR */
+
+.top-nav {
+  width: 100%;
   background-color: var(--primary);
-  color: white;
   padding: var(--space-xs) var(--space-s);
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: var(--space-m);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
   text-decoration: none;
+  padding: var(--space-xs) var(--space-s);
   border-radius: 4px;
 }
 
-header .menuBarNav .button:hover {
+.nav-list li a:hover {
   background-color: var(--primary-light);
-  text-decoration: underline;
 }
+
+/* Mobile dropdown */
+.nav-more {
+  display: none;
+  position: absolute;
+  right: var(--space-s);
+  top: var(--space-xs);
+}
+
+.more-button {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  background-color: var(--primary-dark);
+  color: white;
+  border: none;
+  padding: var(--space-xs) var(--space-s);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  background-color: var(--primary-light);
+}
+
+.more-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--primary);
+  list-style: none;
+  padding: var(--space-xs) 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.more-menu li a {
+  display: block;
+  padding: var(--space-xs) var(--space-m);
+  color: white;
+  text-decoration: none;
+}
+
+.more-menu li a:hover {
+  background-color: var(--primary-light);
+}
+
+.more-menu li a.active {
+  background-color: var(--primary-dark);
+  color: white;
+  font-weight: 600;
+}
+
+.more-menu li a.active:hover {
+  background-color: var(--primary-light);
+}
+
+
+/* Show dropdown when button is focused */
+.more-button:focus + .more-menu,
+.more-button:hover + .more-menu {
+  display: block;
+}
+
+/* Active page highlighting */
+.nav-list li a.active {
+  background-color: var(--primary-dark);
+  color: white;
+  font-weight: 600;
+}
+
+.nav-list li a.active:hover {
+  background-color: var(--primary-light);
+}
+
+
+/* Responsive Nav Bar */
+
+/* Tablet: shrink spacing */
+@media (max-width: 900px) {
+  .nav-list {
+    gap: var(--space-s);
+  }
+}
+
+/* Mobile: hide full nav, show dropdown */
+@media (max-width: 650px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-more {
+    display: block;
+  }
+}
+
 
 
 /* MAIN CONTENT */
