@@ -1,13 +1,35 @@
 @charset "utf-8";
 
-/* =========================================================
-   TYPOGRAPHY SYSTEM
-   ========================================================= */
+/* TYPOGRAPHY */
+
+:root {
+  /* Primary brand color */
+  --primary: #80350E;
+  --primary-light: #A64A1A;
+  --primary-dark: #5A2309;
+  --primary-soft: #D9B8A8;
+
+  /* Secondary accent color */
+  --secondary: #9E7459;
+  --secondary-light: #C9A78C;
+  --secondary-dark: #6E4F3B;
+  --secondary-soft: #E8D9CF;
+
+  /* Neutrals */
+  --text-dark: #444444;
+  --text-medium: #666666;
+  --text-light: #999999;
+  --background: #FAF8F7;
+  --border: #D0CFCF;
+}
+
 
 /* Body text */
 body {
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
+   color: var(--text-dark);
+   background-color: var(--background);
   margin-left: auto;
   margin-right: auto;
   width: 92%;
@@ -27,7 +49,7 @@ header .profileHeader h3,
 .section2 .sectionContentSubTitle {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
-  color: rgba(158,116,89,1.00);
+  color: var(--primary);
 }
 
 /* Body paragraphs */
@@ -42,7 +64,7 @@ header .profileHeader p,
   font-size: 14px;
   font-weight: 400;
   line-height: 1.8;
-  color: rgba(146,146,146,1.00);
+  color: var(--text-medium);
 }
 
 /* UI text (nav, buttons, metadata, footer) */
@@ -60,12 +82,10 @@ footer .footerNote {
 .highlight {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  color: rgba(158,116,89,1.00);
+  color: var(--primary);
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
+/* HEADER */
 
 header {
   text-align: center;
@@ -82,7 +102,8 @@ header .logoPlaceholder span {
   font-family: "Rubik", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: rgba(255,255,255,1.00);
+  color: white;
+   background-color: var(--primary)
   line-height: 53px;
 }
 
@@ -125,8 +146,8 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 
 /* Navigation buttons */
 header .menuBarNav .button {
-  background-color: rgba(184,151,130,1.00);
-  color: rgba(255,255,255,1.00);
+  background-color: var(--primary);
+  color: white;
   display: inline-block;
   text-align: center;
   padding: 2%;
@@ -135,16 +156,15 @@ header .menuBarNav .button {
 }
 
 header .menuBarNav .button:hover {
-  opacity: 0.5;
+  background-color: var(--primary-light);
+   opacity: 0.5;
   text-decoration: underline;
 }
 
-/* =========================================================
-   MAIN CONTENT
-   ========================================================= */
+/* MAIN CONTENT */
 
 hr {
-  background-color: rgba(208,207,207,1.00);
+  background-color: var(--border);
   height: 1px;
 }
 
@@ -173,7 +193,7 @@ h3 {
   font-size: 21px;
   font-weight: 900;
   text-transform: uppercase;
-  color: rgba(184,151,130,1.00);
+  color: var(--primary);
 }
 
 .section1 .sectionTitleRule,
@@ -202,7 +222,7 @@ h3 {
 
 /* External resources */
 .mainContent .externalResourcesNav .externalResources {
-  background-color: rgba(146,146,146,1.00);
+  background-color: var(--secondary-dark);
   display: inline-block;
   text-align: center;
   padding-top: 3%;
@@ -210,31 +230,27 @@ h3 {
 }
 
 .mainContent .externalResourcesNav .externalResources:hover {
-  background-color: rgba(153,153,153,1.00);
+  background-color: var(--secondary);
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* FOOTER */
 
 footer .footerDisclaimer,
 footer .footerNote {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(104,103,103,1.00);
+  color: var(--text-dark);
   font-weight: 700;
 }
 
 footer .footerDisclaimer span,
 footer .footerNote span {
-  color: rgba(181,178,178,1.00);
+  color: var(--text-light);
   font-weight: 400;
 }
 
-/* =========================================================
-   MEDIA QUERIES
-   ========================================================= */
+/* MEDIA QUERIES */
 
 /* Mobile */
 @media only screen and (min-width: 285px) and (max-width: 480px) {
