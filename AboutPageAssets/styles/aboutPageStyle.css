@@ -217,7 +217,6 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 
 .nav-list {
-  background-color: var(--primary);
   list-style: none;
   margin: var(--space-s);
   padding: var(--space-s);
@@ -233,7 +232,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   color: white;
   text-decoration: none;
   text-align: center;
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-xs) var(--space-s);
   margin: var(--space-s);
   border-radius: var(--space-xs);
 }
