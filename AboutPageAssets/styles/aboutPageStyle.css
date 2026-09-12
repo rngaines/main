@@ -225,15 +225,18 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   padding: 0;
 }
 
+
 .nav-list li a {
+  display: block;
   font-family: "Inter", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   color: white;
   text-decoration: none;
-  padding: var(--space-xs) var(--space-s);
-  margin: 0 var(--space-s);
-  border-radius: 4px;
+  text-align: center;
+  padding: var(--space-s) var(--space-m);
+  margin: var(--space-s);
+  border-radius: var(--space-xs);
 }
 
 .nav-list li a:hover {
