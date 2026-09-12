@@ -219,7 +219,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 
 .nav-list {
   list-style: none;
-  margin: var(--space-s);
+  margin: 0;
   padding: var(--space-s);
   display: flex;
 }
