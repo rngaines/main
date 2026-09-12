@@ -240,12 +240,40 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   background-color: var(--primary-light);
 }
 
+/* Hamburger icon */
+.hamburger {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
 /* Mobile dropdown */
 .nav-more {
   display: none;
   position: absolute;
   right: var(--space-s);
-  top: var(--space-xs);
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 .nav-more:hover .more-menu {
@@ -254,7 +282,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .more-button {
   font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   background-color: var(--primary-dark);
   color: white;
   border: none;
