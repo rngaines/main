@@ -273,9 +273,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .nav-more {
   display: none;
   position: absolute;
-  right: var(--space-s);
-  top: 50%;
-  transform: translateY(-50%)
+  background-color: var(--primary-light)
 }
 
 .nav-more:hover .more-menu {
