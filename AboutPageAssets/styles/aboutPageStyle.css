@@ -337,6 +337,28 @@ footer .footerNote span {
     text-align: justify;
   }
 
+/* Logos and photos */
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-l);
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+.media-container img {
+  background-color: var(--secondary-dark);
+  width: 259px;
+  height: auto;
+  border-radius: 1%;
+  clear: both;
+}
+
+.media-container .text-content {
+  text-align: center;
+}
+
   .mainContent .section1 {
     text-align: center;
     margin-bottom: var(--space-l);
