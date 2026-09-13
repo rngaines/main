@@ -434,7 +434,7 @@ footer .footerNote span {
 
 /* MEDIA QUERIES */
 
-* Mobile */
+/* Mobile */
 @media only screen and (max-width: 480px) {
   header .profileHeader {
     text-align: center;
