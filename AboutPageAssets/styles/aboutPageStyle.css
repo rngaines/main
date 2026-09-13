@@ -23,11 +23,11 @@
   --border: #D0CFCF;
 
   /* Spacing scale */
-  --space-xs: 0.5rem;
-  --space-s: 1rem;
-  --space-m: 1.5rem;
-  --space-l: 2rem;
-  --space-xl: 3rem;
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
 
 }
 
@@ -44,6 +44,12 @@ body {
   padding-left: 2.275%;
   padding-right: 2.275%;
   line-height: 1.7;
+}
+
+/* Horizontal rule / thematic break */
+hr {
+  background-color: var(--border);
+  height: 1px;
 }
 
 /* Headings */
@@ -155,98 +161,41 @@ nav, .nav-item, .button, .caption, .metadata, small {
 
 /* HEADER */
 
-header .profileLogo .logoPlaceholder {
-  background-color: var(--secondary-dark);
-  width: 187px;
-  text-align: center;
-}
-
-header .logoPlaceholder span {
-  font-family: "Rubik", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
-  line-height: 53px;
-}
-
-header .profilePhoto {
-  background-color: var(--secondary-dark);
-  width: 259px;
-  height: 259px;
-  border-radius: 0%;
-  clear: both;
-}
-
-header .profileHeader h1,
-header .profileHeader h2 {
-  font-size: 2rem;
-  line-height: 1.2;
-  color: var(--primary);
-}
-
-header .profileHeader h3 {
-  font-size: 1.125rem;
-  line-height: 1.3;
-  color: var(--primary-dark);
-}
-
-header .profileHeader p {
-  color: var(--text-medium);
-}
-
-header .socialNetworkNavBar {
-  text-align: center;
-  margin-top: var(--space-m);
-  margin-bottom: var(--space-l);
-}
-
-header .socialNetworkNavBar .socialNetworkNav img:hover {
-  opacity: 0.5;
-}
-
-
 /* TOP NAVIGATION BAR */
 
-.top-nav {
-  width: 100%;
+.nav-list {
+  list-style-type: none;
   background-color: var(--primary);
   margin: 0;
-  padding: var(--space-xs) var(--space-s);
-  display: flex;
-  position: relative;
+  padding: 0;
   overflow: hidden;
 }
 
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: var(--space-s);
-  display: flex;
+.nav-list li {
+    float: left;
 }
-
 
 .nav-list li a {
   display: block;
   font-family: "Inter", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: white;
+  color: var(--secondary-light);
   text-decoration: none;
   text-align: center;
-  padding: var(--space-xs) var(--space-s);
-  margin: var(--space-s);
-  border-radius: var(--space-xs);
+  padding: var(--space-s);
 }
 
 .nav-list li a:hover {
   background-color: var(--primary-light);
+  color: var(--secondary-soft);
 }
 
 
 /* Active page highlighting */
 .nav-list li a.active {
   background-color: var(--primary-dark);
-  color: white;
+  color: var(--secondary-soft);
   font-weight: 600;
 }
 
@@ -254,99 +203,15 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   background-color: var(--primary-light);
 }
 
-
-/* Hamburger icon */
-.hamburger {
-  display: inline-block;
-  width: 22px;
-  height: 2px;
-  background-color: white;
-  position: relative;
+.nav-list li.right{
+  float: right;
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 2px;
-  background-color: white;
-  left: 0;
+/* LinkedIn icon */
+.linkedin-icon {
+  width: 1.1rem;
+  height: auto;
 }
-
-.hamburger::before {
-  top: -6px;
-}
-
-.hamburger::after {
-  top: 6px;
-}
-
-/* Mobile dropdown */
-.nav-more {
-  display: none;
-  position: absolute;
-  background-color: var(--primary-light);
-}
-
-.nav-more:hover .more-menu {
-  display: block;
-  }
-}
-.more-button {
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
-  background-color: var(--primary-dark);
-  color: white;
-  border: none;
-  padding: var(--space-xs) var(--space-s);
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.more-button:hover {
-  background-color: var(--primary-light);
-}
-
-.more-menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: var(--primary);
-  list-style: none;
-  padding: var(--space-xs) 0;
-  margin: 0;
-  border-radius: 4px;
-}
-
-.more-menu li a {
-  display: block;
-  padding: var(--space-xs) var(--space-m);
-  color: white;
-  text-decoration: none;
-}
-
-.more-menu li a:hover {
-  background-color: var(--primary-light);
-}
-
-.more-menu li a.active {
-  background-color: var(--primary-dark);
-  color: white;
-  font-weight: 600;
-}
-
-.more-menu li a.active:hover {
-  background-color: var(--primary-light);
-}
-
-
-/* Show dropdown when button is focused */
-.more-button:focus + .more-menu,
-.more-button:hover + .more-menu {
-  display: block;
-}
-
 
 /* Responsive Nav Bar */
 
@@ -357,29 +222,15 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
   }
 }
 
-/* Mobile: hide full nav, show dropdown */
+/* Mobile: vertical stack nav*/
 @media (max-width: 650px) {
-  .nav-list {
-    display: none;
-  }
-
-  .nav-more {
-    display: block;
-  }
-}
-
-  .nav-more:hover .more-menu {
-    display: block;
-  }
+  .nav-list li, .nav-list li.right {
+    float: none
+    }
 }
 
 
 /* MAIN CONTENT */
-
-hr {
-  background-color: var(--border);
-  height: 1px;
-}
 
 /* Section titles */
 .section-title {
@@ -412,6 +263,47 @@ hr {
   background-color: var(--secondary);
 }
 
+/* Logos and photos */
+.media-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+.media-container img {
+  background-color: var(--secondary-dark);
+  width: 259px;
+  height: auto;
+  border-radius: 1%;
+  clear: both;
+}
+
+.profileLogo .logoPlaceholder {
+  background-color: var(--secondary-dark);
+  width: 187px;
+  text-align: center;
+}
+
+.logoPlaceholder span {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  line-height: 53px;
+}
+
+
+.socialNetworkNavBar {
+  text-align: center;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-l);
+}
+
+.socialNetworkNavBar img:hover {
+  opacity: 0.5;
+}
 
 
 /* FOOTER */
