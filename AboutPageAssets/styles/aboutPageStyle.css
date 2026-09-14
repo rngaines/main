@@ -421,7 +421,7 @@ nav, .nav-item, .button, .caption, .metadata, small {
 .card-profile img {
   background-color: var(--background);
   width: 50%;
-  max-width: 100px;
+  max-width: 200px;
   height: auto;
   border-radius: 1%;
   clear: both;
