@@ -23,97 +23,207 @@
 <!-- Header (nav bar) -->
 <header>
   <ul class="nav-list">
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="Gaines-Research.html">Research Vision</a></li>
     <li><a href="Gaines-Publications.html">Publications</a></li>
-    <li><a href="Gaines-Resources.html">Resources</a></li>
+    <!-- <li><a href="Gaines-Mentoring.html">Mentoring</a></li> -->
+    <li><a href="Gaines-Resources.html" class="active">Resources</a></li>
     <li><a href="Gaines-About.html">CV &amp; Bio</a></li>
     <li class="right"><a href="https://linkedin.com/in/rachelngaines" target="_blank" rel="noopener noreferrer"><svg xmlns="http://w3.org" viewBox="0 0 24 24" class="linkedin-icon"><path fill="#C9A78C" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a></li>
     <li class="right"><a href="mailto:rngaines29@gmail.com">&#9993;</a></li>
   </ul>
 </header>
 
-	
-  <!-- Identity details -->
-  <section class="profileHeader">
-    <h1>Resources</h1>
-    <hr> 
-  </section>
-</header>
-	
-<!-- content -->
-<section class="mainContent"> 
+<!-- Main content / body -->
+<mainContent>
+  
+<h1 class="section-title">Resources</h1>
+<hr>
 
-	
-  <!-- Add section -->
- <section class="section2">
-	<h2 class="sectionTitle">Procedures &amp; Protocols</h2>
-    <hr class="sectionTitleRule">
-    <!-- Add papers  -->
-    <article class="section2Content">
-		<p class="sectionContent"><span class="highlight">Standard Operating Procedures</span>
-	  	<p class="sectionContent hover-link"><a href="Resources/SOPs/Gaines-SOPtemplate.docx">Master SOP template based on Rachel's 20+ authored SOPs</a></p>
-		<p class="sectionContent hover-link"><a href="Resources/SOPs/Gaines-SampleSOP-HPLCoperation.docx">Sample SOP on HPLC operation</a></p>
-		<p class="sectionContent"><em>Coming soon!</em> Using JMP to design a Response Surface Methodology study</p>
-		<p class="sectionContent"><span class="highlight">Checklists &amp; How-To Guides</span>
-		<p class="sectionContent hover-link"><a href="Resources/SOPs/Gaines-ChecklistOnChecklists.docx">General guidelines for checklists and how-to documents, based on 17+ checklist- and how-to documents</a></p>
-		<p class="sectionContent hover-link"><a href="Resources/SOPs/Gaines-SampleChecklist-GettingStartedGuide.docx">Sample checklist on "getting started" in a research group</a></p>
-	</article>
-  </section>
-	
-	
-	<section class="section2">
-	<h2 class="sectionTitle">Mentoring</h2>
-    <hr class="sectionTitleRule">
-    <!-- Add content  -->
-    <article class="section2Content">
-	  <p class="sectionContent"><span class="highlight">Mentoring Yourself</span>
-	  <p class="sectionContent hover-link"><a href="Resources/Mentoring/Rachels-Recommended-Reads.docx">Recommended reading list for before and during your Ph.D. Feel free to email me with your suggestions!</a></p>
-	  
-		<p class="sectionContent"><span class="highlight">Mentoring Others</span>
-	  <p class="sectionContent hover-link"><a href="Resources/Mentoring/Gaines-MentoringPhilosophy.docx">Mentoring Philosophy Statement</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Mentoring/Gaines-MentoringPolicies-Undergrads">Rachel's mentoring policies (here, specifically for undergrads), based on 10+ years of mentoring</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Mentoring/Gaines-UndergraduateResearch-InterviewQuestions.docx">Sample interview questions for prospective undergraduate researchers</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Mentoring/Gaines-UndergraduateResearch-ProjectDescription.docx">Sample project description for an undergraduate hiring posting</a></p>
+<section>	
+  <h2 class="section-title">Procedures &amp; Protocols</h2>
 
-	
-    </article>
-	</section>
-    <!-- copy and paste the above block for each section of resources  -->
-	 
-<section class="section2">
-	<h2 class="sectionTitle">Code &amp; Data Analysis</h2>
-    <hr class="sectionTitleRule">
-    <!-- Add papers  -->
-    <article class="section2Content">
-		<p class="sectionContent"><em><span class="highlight">If you choose to use these resources, I respectfully request you cite the manuscripts (linked for each resource) for which we originally developed them. Thank you for your support!</span></em></p>
-		<p class="sectionContent"><span class="highlight">HPLC Analysis Code</span> <em>(cite: <a href="Publications/01-Gaines, Kenis, et al. J. Electrochem. Soc. 2024.pdf" class="hover-link">Gaines, Kenis, et al. J. Electrochem. Soc., 2024</a>)</em></p>
-		<p class="sectionContent hover-link"><a href="Resources/Code/HPLC/HPLCdataAnalysis_UI.mlx">HPLC analysis code (MATLAB): User interface</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Code/HPLC/findpeaksRNG.m">HPLC analysis code (MATLAB): Required subpackage #1 (findpeaksRNG)</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Code/HPLC/peakfitRNG.m">HPLC analysis code (MATLAB): Required subpackage #2 (peakfitRNG)</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Code/HPLC/ipf.m">HPLC analysis code (MATLAB): Optional subpackage #3 (ipf)</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Code/HPLC/SampleDataFile_Experiment.txt">Sample HPLC datafile (experimental)</a></p>
-	  <p class="sectionContent hover-link"><a href="Resources/Code/HPLC/SampleDataFile_Solution.txt">Sample HPLC datafile (solution)</a></p>
-	  <p class="sectionContent"><span class="highlight">HPLC Analysis Fillable Spreadsheet</span> (complementary to the above code; <em>cite: <a href="Publications/01-Gaines, Kenis, et al. J. Electrochem. Soc. 2024.pdf" class="hover-link">Gaines, Kenis, et al. J. Electrochem. Soc., 2024</a></em>)</p>
-	  <p class="sectionContent hover-link"><a href="Resources/Code/HPLC/Gaines_HPLCAnalysisSheet.xlsx">Fillable HPLC analysis spreadsheet (for multiple experiments / a whole study!)</a></p>
-    </article>
+  <div class = "card-grid">
+    <div class="card">
+      <h3 class="card-title">MASTER: Standard Operating Procedure</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        Master SOP template developed from Rachel's 20+ authored SOPs.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/SOPs/Gaines-SOPtemplate.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">SAMPLE: HPLC SOP</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines, <a href="https://www.linkedin.com/in/lauren-harris-814193128/">Lauren Harris</a></p>
+      <p class="card-abstract">Sample SOP used to operate an HPLC.</p>
+      <div class="card-link-boxes">
+        <a href="Resources/SOPs/Gaines-SampleSOP-HPLCoperation.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">MASTER: Checklist</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        Guidelines for checklist-style documents developed from Rachel's 17+ authored checklists.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/SOPs/Gaines-ChecklistOnChecklists.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">SAMPLE: Onboarding Checklist</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        Sample checklist used to onboard researchers to a new group.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/SOPs/Gaines-SampleChecklist-GettingStartedGuide.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<section>
+<h2 class="section-title">How-To</h2>
+
+  <div class = "card-grid">
+
+    <div class="card">
+      <h3 class="card-title">INSTRUMENT: Shimadzu Nexera HPLC</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines, <a href="https://www.linkedin.com/in/lauren-harris-814193128/">Lauren Harris</a></p>
+      <p class="card-abstract">
+        SOP used to operate a Shimadzu Nexera HPLC (dual-channel UV-Vis &amp; RID detectors) with a Bio-Rad Aminex HPX-87H column.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/SOPs/Gaines-SampleSOP-HPLCoperation.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">SOFTWARE: JMP (Design of Experiments)</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines, based on training from Dow Chemical</p>
+      <p class="card-abstract">
+        Using JMP software (free for students with a university email) to design a Response Surface Methodology study.
+      </p>
+      <div class="card-link-boxes">
+        <a  class="card-link">Coming soon!</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<section>
+<h2 class="section-title">Code &amp; Data Analysis</h2>
+
+  <div class = "card-grid">
+
+    <div class="card">
+      <h3 class="card-title">HPLC Analysis Code (MATLAB)</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines, <a href="https://orcid.org/0000-0002-1056-4593">Jimmy Griebler</a></p>
+      <p class="card-abstract">
+        MATLAB code used to analyze data from a Shimadzu Nexera HPLC. Please cite our work if you use the code! :-) 
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/Code/HPLC/HPLCdataAnalysis_UI.mlx" class="card-link">UI (.mlx)</a>
+        <a href="Resources/Code/HPLC/findpeaksRNG.m" class="card-link">Required 1 (.m)</a>
+        <a href="Resources/Code/HPLC/peakfitRNG.m" class="card-link">Required 2 (.m)</a>
+        <a href="Resources/Code/HPLC/ipf.m" class="card-link">Optional (.m)</a>
+        <a href="Resources/Code/HPLC/SampleDataFile_Experiment.txt" class="card-link">Sample data 1</a>
+        <a href="Resources/Code/HPLC/SampleDataFile_Solution.txt" class="card-link">Sample data 2</a>
+        <a href="Publications/01-Gaines, Kenis, et al. J. Electrochem. Soc. 2024.pdf" class="card-link">Citation: PDF</a>
+        <a href="doi.org/10.1149/1945-7111/ad537c" class="card-link">Citation: DOI</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">HPLC Analysis (Excel)</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        Fillable excel spreadsheet for peak area-based analysis to calculate molar quantities, concentrations, and Faradaic efficiencies based on your input values.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/Code/HPLC/Gaines_HPLCAnalysisSheet.xlsx" class="card-link">.xlsx</a>
+        <a href="Publications/01-Gaines, Kenis, et al. J. Electrochem. Soc. 2024.pdf" class="card-link">Citation: PDF</a>
+        <a href="doi.org/10.1149/1945-7111/ad537c" class="card-link">Citation: DOI</a>
+      </div>
+    </div>
+
   </section>
-	 
-	 
+
+<hr>
+
+<section>
+<h2 class="section-title">Mentoring</h2>
+
+  <div class = "card-grid">
+
+    <div class="card">
+      <h3 class="card-title">Rachel's Mentoring Philosophy</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        An overview of Rachel's approach to mentoring.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/Mentoring/Gaines-MentoringPhilosophy.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">GRAD STUDENTS &amp; POSTDOCS: Recommended Reading List</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        Some of Rachel's most-recommended books from her time as a grad student and postdoc. (Have a suggestion? Email me - I love a new read!)
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/Mentoring/Rachels-Recommended-Reads.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">GRAD STUDENTS: Hiring an Undergrad</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        A sample project description to be posted for hiring an undergraduate researcher, and sample interview questions for a 20-30 minute informal interview.
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/Mentoring/Gaines-UndergraduateResearch-ProjectDescription.docx" class="card-link">Proj. descr. (.docx)</a>
+        <a href="Resources/Mentoring/Gaines-UndergraduateResearch-InterviewQuestions.docx" class="card-link">Int. Q's (.docx)</a>        
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">UNDERGRADS: Mentoring Policies</h3>
+      <p class="card-authors"><i>Developed by:</i> Rachel Gaines</p>
+      <p class="card-abstract">
+        Rachel's mentoring policies for undergraduate researchers, based on 10+ years of teaching, coaching, and mentoring. 
+      </p>
+      <div class="card-link-boxes">
+        <a href="Resources/Mentoring/Gaines-MentoringPolicies-Undergrads.docx" class="card-link">.docx</a>
+      </div>
+    </div>
+
+  </div>
 </section>
-</section>
+
+<hr>
+
+</mainContent> 
+	 
+
 <footer>
-  <hr>
   <p class="footerDisclaimer"><span>Website designed and managed by Rachel Gaines. All rights reserved.</span></p>
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
