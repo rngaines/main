@@ -278,13 +278,22 @@ nav, .nav-item, .button, .caption, .metadata, small {
   clear: both;
 }
 
-.profileLogo .logoPlaceholder {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+  margin-top: var(--space-s);
+  margin-bottom: var(--space-s);
+  
   background-color: var(--secondary-dark);
-  width: 187px;
-  text-align: center;
+  width: 100%;
+  height: auto;
+  border-radius: 1%;
+  clear: both;
 }
 
-.logoPlaceholder span {
+
+.logo span {
   font-family: "Rubik", sans-serif;
   font-size: 30px;
   font-weight: 700;
