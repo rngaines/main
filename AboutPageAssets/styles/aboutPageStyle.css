@@ -272,7 +272,8 @@ nav, .nav-item, .button, .caption, .metadata, small {
 
 .media-container img {
   background-color: var(--secondary-dark);
-  width: 0.35fr;
+  width: 33%;
+  max-width: 300px;
   height: auto;
   border-radius: 1%;
   clear: both;
