@@ -386,33 +386,27 @@ nav, .nav-item, .button, .caption, .metadata, small {
   gap: var(--space-m);
 }
 
+/* Media */
 .card-media {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-l);
   margin-top: var(--space-s);
   margin-bottom: var(--space-s);
+  width: 100%;
 }
 
 .card-media img {
   background-color: var(--background);
-  width: 0.75fr;
+  width: 100%;
+  max-width: 150 px;
   height: auto;
   border-radius: 1%;
   clear: both;
 }
 
 
-/* "Social Network Nav Bar" */
-.socialNetworkNavBar {
-  text-align: center;
-  margin-top: var(--space-m);
-  margin-bottom: var(--space-l);
-}
-
-.socialNetworkNavBar img:hover {
-  opacity: 0.5;
-}
 
 
 /* FOOTER */
