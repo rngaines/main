@@ -287,7 +287,6 @@ nav, .nav-item, .button, .caption, .metadata, small {
   margin-bottom: var(--space-s);
   
   background-color: var(--secondary-dark);
-  width: 100%;
   height: auto;
   border-radius: 1%;
   clear: both;
