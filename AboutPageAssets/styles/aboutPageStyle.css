@@ -31,6 +31,12 @@
 
 }
 
+/* Horizontal rule / thematic break */
+hr {
+  background-color: var(--border);
+  height: 1px;
+}
+
 /* Body text */
 body {
   font-family: "Figtree", sans-serif;
@@ -44,12 +50,6 @@ body {
   padding-left: 2.275%;
   padding-right: 2.275%;
   line-height: 1.7;
-}
-
-/* Horizontal rule / thematic break */
-hr {
-  background-color: var(--border);
-  height: 1px;
 }
 
 /* Headings */
@@ -235,8 +235,6 @@ nav, .nav-item, .button, .caption, .metadata, small {
 /* Section titles */
 .section-title {
   font-family: "Rubik", sans-serif;
-  font-size: 1.3125rem;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--primary);
@@ -294,7 +292,92 @@ nav, .nav-item, .button, .caption, .metadata, small {
   line-height: 53px;
 }
 
+/* CARDS */
 
+.card {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: var(--space-m);
+  margin-bottom: var(--space-m);
+  box-shadow: 0 2px 4px var(--border);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px var(--primary-soft);
+  transform: translateY(-2px);
+}
+
+/* Title */
+.card-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: var(--space-xs);
+}
+
+/* Authors */
+.card-authors {
+  font-family: "Figtree", sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  margin-bottom: var(--space-xs);
+}
+
+.card-authors a {
+  color: var(--text-medium);
+}
+
+/* Venue */
+.card-venue {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: var(--secondary-dark);
+  margin-bottom: var(--space-s);
+}
+
+/* Abstract */
+.card-abstract {
+  font-family: "Figtree", sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: var(--space-m);
+}
+
+/* Links */
+.card-link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+} 
+
+.card-link {
+  display: flex;
+  gap: var(--space-s);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  background-color: var(--primary);
+  color: var(--primary-soft);
+  padding: var(--space-xs) var(--space-s);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  background-color: var(--primary-light);
+  color: var(--secondary-soft);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-m);
+}
+
+
+/* "Social Network Nav Bar" */
 .socialNetworkNavBar {
   text-align: center;
   margin-top: var(--space-m);
