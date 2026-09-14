@@ -401,7 +401,7 @@ nav, .nav-item, .button, .caption, .metadata, small {
 .card-media img {
   background-color: var(--background);
   width: 100%;
-  max-width: 150 px;
+  max-width: 100 px;
   height: auto;
   border-radius: 1%;
   clear: both;
