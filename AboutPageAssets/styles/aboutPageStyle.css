@@ -294,7 +294,6 @@ nav, .nav-item, .button, .caption, .metadata, small {
   clear: both;
 }
 
-
 .logo span {
   font-family: "Rubik", sans-serif;
   font-size: 30px;
@@ -305,6 +304,14 @@ nav, .nav-item, .button, .caption, .metadata, small {
 
 /* CARDS */
 
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-m);
+}
+
+/* Card itself */
 .card {
   background-color: var(--background);
   border: 1px solid var(--border);
@@ -381,32 +388,25 @@ nav, .nav-item, .button, .caption, .metadata, small {
   color: var(--secondary-soft);
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-m);
-}
-
 /* Media */
 .card-media {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-l);
-  margin-top: var(--space-s);
-  margin-bottom: var(--space-s);
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-l);
   width: 100%;
 }
 
 .card-media img {
   background-color: var(--background);
   width: 100%;
-  max-width: 100 px;
+  max-width: 50px;
   height: auto;
   border-radius: 1%;
   clear: both;
 }
-
 
 
 
@@ -453,7 +453,8 @@ footer .footerNote span {
 
 .media-container img {
   background-color: var(--secondary-dark);
-  width: 0.35fr;
+  width: 33%;
+  max-width: 259px;
   height: auto;
   border-radius: 1%;
   clear: both;
