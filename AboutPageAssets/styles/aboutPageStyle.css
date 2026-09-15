@@ -473,12 +473,13 @@ footer .footerNote span {
 
 .media-container img {
   background-color: var(--secondary-dark);
-  width: 33%;
-  max-width: 259px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 1%;
   clear: both;
 }
+
 
 .media-container .text-content {
   text-align: center;
